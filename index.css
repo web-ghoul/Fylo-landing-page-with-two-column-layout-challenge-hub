@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+.main .container {
+    background-color: #fff;
+}
+
+header .contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+header .contain .logo {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .contain .logo img {
+    width: 75%;
+}
+
+header .contain .tools {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+header .contain .tools .tool a {
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    font-size: 15px;
+}
+
+section .contain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 300px;
+}
+
+section .contain .content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+section .contain .content h1 {
+    font-size: 34px;
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+}
+
+section .contain .content p {
+    font-size: 17px;
+    color: hsl(243, 87%, 12%);
+}
+
+section .contain .content form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 450px;
+}
+
+section .contain .content form input[type='email'] {
+    width: 100%;
+    border: 2px solid #ccc;
+    color: #eee;
+}
+
+section .contain .content form input[type='submit'] {
+    width: fit-content;
+    padding: 12px 40px;
+    color: #fff;
+    font-weight: 700;
+    background-color: hsl(224, 93%, 58%);
+}
+
+section .contain .pic {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section .contain .pic img {
+    width: 100%;
+}
+
+section.two .contain {
+    position: relative;
+    background-color: hsl(240, 75%, 98%);
+}
+
+section.two .contain::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url('./images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -200px;
+    z-index: 0;
+}
+
+section.two .contain .content .par {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+section.two .contain .content .par a {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 0;
+    width: fit-content;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+section.two .contain .content .box {
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 10px hsl(240, 33%, 94%);
+}
+
+section.two .contain .content .box img {
+    width: 5%;
+}
+
+section.two .contain .content .box p {
+    font-size: 15px;
+}
+
+section.two .contain .content .box .avatar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+section.two .contain .content .box .avatar img {
+    border-radius: 50%;
+    width: 40px;
+    font-size: 12px;
+    height: 40px;
+}
+
+section.two .contain .content .box .avatar .info p {
+    font-size: 12px;
+}
+
+section.two .contain .content .box .avatar .info span {
+    font-weight: 700;
+}
+
+section.three .contain {
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 100px;
+}
+
+section.three .contain .content h3 {
+    font-size: 25px;
+}
+
+section.three .contain .content p {
+    color: #fff;
+}
+
+section.three .contain form {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 20px;
+}
+
+section.three .contain form input:last-child {
+    width: fit-content;
+    padding: 12px 40px;
+    color: #fff;
+    font-weight: 700;
+    background-color: hsl(224, 93%, 58%);
+}
+
+footer .contain {
+    background-color: hsl(243, 87%, 12%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+footer .contain .part-one {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .contain .part-one .part {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+footer .contain .part-two {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contain {
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    line-height: 1.7;
+}
+
+form input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    header .contain {
+        gap: 40px;
+    }
+    header .contain .logo {
+        height: 80px;
+        justify-content: flex-start;
+    }
+    header .contain .logo img {
+        width: 70%;
+    }
+    header .contain .tools {
+        gap: 40px;
+    }
+    header .contain .tools .tool a {
+        font-size: 15px;
+    }
+    section .contain {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 300px;
+    }
+    section .contain .content {
+        gap: 25px;
+    }
+    section .contain .content h1 {
+        font-size: 30px;
+    }
+    section .contain .content p {
+        font-size: 15px;
+    }
+    section .contain .content form {
+        justify-content: flex-start;
+        width: 400px;
+    }
+    section .contain .content form input[type='submit'] {
+        padding: 10px 30px;
+    }
+    section .contain .pic {
+        justify-content: flex-end;
+    }
+    section.two .contain::after {
+        height: 150px;
+        top: -150px;
+    }
+    section.two .contain .content .box {
+        width: 100%;
+    }
+    section.two .contain .content .box img {
+        width: 5%;
+    }
+    section.two .contain .content .box p {
+        font-size: 12px;
+    }
+    section.two .contain .content .box .avatar {
+        justify-content: flex-start;
+    }
+    section.two .contain .content .box .avatar img {
+        width: 30px;
+        height: 30px;
+    }
+    section.two .contain .content .box .avatar .info p {
+        font-size: 12px;
+    }
+    section.three .contain {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 50px;
+    }
+    section.three .contain .content h3 {
+        font-size: 22px;
+    }
+    section.three .contain .content p {
+        font-size: 12px;
+    }
+    section.three .contain form {
+        justify-content: stretch;
+    }
+    section.three .contain form input:last-child {
+        padding: 10px 30px;
+        background-color: hsl(224, 93%, 58%);
+    }
+    footer .contain {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .contain {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    form input {
+        padding: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    header .contain {
+        gap: 30px;
+    }
+    header .contain .logo img {
+        width: 50%;
+    }
+    header .contain .tools {
+        gap: 30px;
+    }
+    header .contain .tools .tool a {
+        font-size: 12px;
+    }
+    section .contain {
+        gap: 40px;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section .contain .pic {
+        order: -1;
+    }
+    section .contain .content {
+        text-align: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    section .contain .content h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    section .contain .content p {
+        text-align: center;
+        font-size: 12px;
+    }
+    section .contain .pic {
+        justify-content: flex-end;
+    }
+    section.two .contain::after {
+        height: 150px;
+        top: -150px;
+    }
+}
